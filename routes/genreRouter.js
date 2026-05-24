@@ -1,0 +1,8 @@
+const Router = require('express');
+const router = new Router();
+const genreController = require('../controllers/GenreController');
+
+router.post('/', genreController.create);
+router.get('/', genreController.getAll);
+
+module.exports = router;
